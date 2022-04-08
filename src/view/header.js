@@ -1,9 +1,15 @@
 import React from "react";
 import "./style/header.css"
+import { Widgets, Menu, Search} from '@mui/icons-material';
 const Header = () => {
     return(
         <div className="header">
-            <p className="left">아무튼</p>
+            <div className="left">
+                <Search/>
+            </div>
+
+            <Widgets className=""/>
+            <Menu/>
             <p>아이콘</p>
         </div>
     )
