@@ -2,6 +2,7 @@ import React from "react";
 import "./style/header.css"
 import { AiOutlineSearch,AiOutlineMenu } from "react-icons/ai";
 import { IoPartlySunny } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 const Header = () => {
     return(
         <div className="header">
@@ -12,6 +13,9 @@ const Header = () => {
                     <li className="nowDate">2022 / 04 / 07</li>
                     <li className="nowTime">13 : 36 : 45</li>
                     <li> <IoPartlySunny className="icon"/> </li>
+                    {/* test router link */}
+                    <li><Link to="/"> go home </Link></li>
+                    <li><Link to="/board"> go board </Link></li>
                 </ul>
             </div>
             <div>
