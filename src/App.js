@@ -5,11 +5,11 @@ import Header from './components/header';
 import Home from './page/Home';
 import Board from './page/Board';
 import NotFound from './page/NotFound';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <div className='Frame'>
           <Header/>
         </div>
@@ -22,7 +22,7 @@ function App() {
           </Routes>
         </div>
         <Footer/>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
